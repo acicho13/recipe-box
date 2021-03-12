@@ -1,0 +1,55 @@
+@import "./../../../assets/global-styles/variables";
+
+.bar {
+  .fa-search {
+    color: $color-navy;
+    left: 5px;
+    top: 5px;
+  }
+  input {
+    height: 1.5rem;
+    border: 1px solid $color-grey-dark;
+    border-radius: 5px;
+    font-size: 14px;
+    padding-left: 25px;
+    color: $color-navy;
+    &::placeholder {
+      color: $color-navy;
+      padding-bottom: 2px;
+      font-weight: 500;
+    }
+  }
+}
+
+.card {
+  box-shadow: 4px 4px #6c757d40;
+  border: none;
+  padding: 0;
+  width: 13rem;
+  background: linear-gradient(
+    180deg,
+    rgba(134, 38, 51, 1) 0%,
+    rgba(255, 255, 255, 1) 50%
+  );
+  .card-body-wrapper {
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    flex-grow: 1;
+    .card-title {
+      font-weight: 600;
+      text-transform: capitalize;
+    }
+  }
+  .card-footer {
+    border: none;
+    .btn-secondary {
+      background-color: $color-rust;
+      font-weight: 500;
+    }
+  }
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+  background-color: $color-black;
+}

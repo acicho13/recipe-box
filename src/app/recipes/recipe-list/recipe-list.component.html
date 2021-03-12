@@ -1,0 +1,29 @@
+<div class="searchbar bg-navy mt-n3 pb-2 mb-3">
+  <div class="bar row justify-content-center">
+    <div class="position-relative">
+    <i class="fas fa-search position-absolute rust"></i>
+    <input type="text" placeholder="Search recipes" #searchBar (keyup)="fetchResults($event)" [(ngModel)]="searchInput" />
+  </div>
+  </div>
+</div>
+<div class="container mx-auto">
+  <div class="row justify-content-center">
+<div class="card bg-rust text-center m-3 pt-1" *ngFor="let recipe of recipes, let i = index">
+     <div class="bg-white card-body-wrapper">
+        <div class="card-body">
+          <h2 class="card-title navy m-0">
+            {{ recipe.name}}
+          </h2>
+
+        </div>
+
+      </div>
+      <div class="card-footer bg-white pt-0">
+        <a [routerLink]="['/recipes/', i]" class="btn btn-secondary">
+          View Recipe
+          </a>
+          </div>
+    </div>
+</div>
+</div>
+<router-outlet></router-outlet>

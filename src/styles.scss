@@ -1,0 +1,50 @@
+/* You can add global styles to this file, and also import other style files */
+@import "./assets/global-styles/variables";
+
+/* Custom GLobal Styles */
+body {
+  background-color: $color-grey-light;
+  min-height: 100vh;
+}
+.bg-black {
+  background-color: $color-black;
+}
+.bg-grey-dark {
+  background-color: $color-grey-dark;
+}
+.bg-rust {
+  background-color: $color-rust;
+}
+.bg-red {
+  background-color: $color-red;
+}
+.bg-navy {
+  background-color: $color-navy;
+}
+
+.white {
+  color: $color-white;
+}
+.black {
+  color: $color-black;
+}
+.rust {
+  color: $color-rust;
+}
+.red {
+  color: $color-red;
+}
+.navy {
+  color: $color-navy;
+}
+.grey-dark {
+  color: $color-grey-dark;
+}
+
+h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0;
+}
+h3 {
+  font-size: 1rem;
+}

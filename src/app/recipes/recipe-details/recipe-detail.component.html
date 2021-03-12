@@ -1,0 +1,19 @@
+<button class="btn navy mt-n1" [routerLink]="['/recipes']">
+  <i class="fa fa-chevron-left navy"></i>
+  Back
+</button>
+<div class="card mx-auto" *ngIf="recipe">
+  <div class="card-header text-center font-weight-bold">
+    <h2>{{ name }}</h2>
+  </div>
+  <div class="card-body">
+    <h3 *ngIf="ingredients">Ingredients</h3>
+    <div *ngFor="let ingredient of ingredients" >
+      &#8227; {{ ingredient }}
+    </div>
+    <h3 *ngIf="directions" class="mt-3">Directions</h3>
+    <div *ngFor="let direction of directions, let i = index;" >
+      {{i + 1}}. {{ direction }}
+    </div>
+  </div>
+  <div class="card-footer">
